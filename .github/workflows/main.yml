@@ -22,3 +22,4 @@ jobs:
         sudo apt-get install python3-git
         cd tools
         ./generate-docs
+        npm run build
