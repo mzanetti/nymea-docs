@@ -19,5 +19,5 @@ jobs:
       run: |
         ls -la
         npm i
-        cd src
+        cd tools
         ./generate-docs
