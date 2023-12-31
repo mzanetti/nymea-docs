@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - master
+    - update-deps
   workflow_dispatch:
 
 jobs:
