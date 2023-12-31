@@ -1,0 +1,22 @@
+name: deploy nymea docs
+
+on:
+  push:
+    branches:
+    - master
+  workflow_dispatch:
+
+jobs:
+  image:
+    name: build docs
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v3
+    - name: setup node
+      uses: ng-easy/npm-setup@v1.7.2
+    - name: build
+      run: |
+        ls -la
+        npm i
+        cd src
+        ./generate-docs
